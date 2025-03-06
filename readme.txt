@@ -2,5 +2,3 @@
 hello, world!
 
 ohayo
-
-UwU
