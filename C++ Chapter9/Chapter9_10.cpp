@@ -43,7 +43,7 @@ public:
 
     void deleteItem(int index) {
         if (index < 1 || index > count) {
-            cout << "µµÇüÀÌ ¾ø½À´Ï´Ù!" << endl;
+            cout << "ë„í˜•ì´ ì—†ìŠµë‹ˆë‹¤." << endl;
             return;
         }
         delete shapes[index - 1];
@@ -60,18 +60,18 @@ public:
     }
 
     void run() {
-        cout << "±×·¡ÇÈ ¿¡µðÅÍÀÔ´Ï´Ù." << endl;
+        cout << "ê·¸ëž˜í”½ ì—ë””í„°ìž…ë‹ˆë‹¤." << endl;
         while (true) {
             int menu, type, index;
-            cout << "»ðÀÔ:1, »èÁ¦:2, ¸ðµÎº¸±â:3, Á¾·á:4 >> ";
+            cout << "ì‚½ìž…:1, ì‚­ì œ:2, ëª¨ë‘ë³´ê¸°:3, ì¢…ë£Œ:4 >> ";
             cin >> menu;
             if (menu == 1) {
-                cout << "¼±:1, ¿ø:2, »ç°¢Çü:3 >> ";
+                cout << "ì„ :1, ì›:2, ì‚¬ê°í˜•:3 >> ";
                 cin >> type;
                 insertItem(type);
             }
             else if (menu == 2) {
-                cout << "»èÁ¦ÇÏ°íÀÚ ÇÏ´Â µµÇüÀÇ ÀÎµ¦½º >> ";
+                cout << "ì‚­ì œí•˜ê³ ìž í•˜ëŠ” ë„í˜•ì˜ ì¸ë±ìŠ¤ >> ";
                 cin >> index;
                 deleteItem(index);
             }
