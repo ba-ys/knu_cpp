@@ -4,7 +4,7 @@ using namespace std;
 template <class T>
 void reverseArray(T data[], int n) {
 	T tmp;
-	for (int i = 0; i < n/2; i++) {
+	for (int i = 0; i < n / 2; i++) {
 		tmp = data[i];
 		data[i] = data[n - 1 - i];
 		data[n - 1 - i] = tmp;
